@@ -32,7 +32,7 @@ images:
     newTag: v0.10.4
   - name: frontend
     newName: kindheart213/frontend
-    newTag: 99ff776
+    newTag: latest
   - name: loadgenerator
     newName: us-central1-docker.pkg.dev/google-samples/microservices-demo/loadgenerator
     newTag: v0.10.4
