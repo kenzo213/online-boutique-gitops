@@ -17,4 +17,4 @@ patches:
 images:
   - name: us-central1-docker.pkg.dev/google-samples/microservices-demo/frontend
     newName: kenzo213/frontend
-    newTag: 39ee66b
+    newTag: 99ff776
