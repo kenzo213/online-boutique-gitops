@@ -13,6 +13,16 @@ patches:
         value: 1
     target:
       kind: Deployment
+  - patch: |-
+      - op: add
+        path: /spec/template/metadata/annotations
+        value:
+          sidecar.istio.io/proxyCPU: "10m"
+          sidecar.istio.io/proxyMemory: "40Mi"
+          sidecar.istio.io/proxyCPULimit: "100m"
+          sidecar.istio.io/proxyMemoryLimit: "128Mi"
+    target:
+      kind: Deployment
 
 images:
   - name: adservice
