@@ -4,6 +4,7 @@ kind: Kustomization
 namespace: boutique-dev
 
 resources:
+  - mtls.yaml
   - ../../base
 
 patches:

@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: istio-sidecar-injector
+  namespace: istio-system
+data:
+  values: |
+    {
+      "global": {
+        "proxy": {
+          "resources": {
+            "requests": {
+              "cpu": "10m",
+              "memory": "40Mi"
+            },
+            "limits": {
+              "cpu": "100m",
+              "memory": "128Mi"
+            }
+          }
+        }
+      }
+    }
